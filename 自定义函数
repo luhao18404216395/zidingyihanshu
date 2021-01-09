@@ -1,23 +1,25 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-int Add(int x,int y)
+int Add(int x, int y)
 {
 	int z = x + y;
 	return z;
 }
 int main()
 {
-	int sum = 0; 
-  { int num1 = 10;
-	int num2 = 0;
-	sum = Add(num1, num2);
-	printf("sum=%d\n", sum);
+	int sum = 0;
+	
+	{
+		int num1 = 10;
+		int num2 = 20;
+		sum = Add(num1, num2);
+		printf("sum=%d\n", sum);
 	}
 	{
-	int a = 20;
-	int b = 20;
-	sum = Add(a, b);
-	printf("sum=%d", sum);
-     }
+		int a = 20;
+		int b = 35;
+		sum = a + b;
+		printf("sum=%d\n", sum);
+	}
 	return 0;
 }
